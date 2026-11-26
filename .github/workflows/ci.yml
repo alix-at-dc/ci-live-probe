@@ -29,7 +29,7 @@ jobs:
     with:
       # GitHub-hosted runners by default. If your account cannot use them (for example billing is
       # blocked), set the repository variable CI_RUNS_ON to a JSON label such as '["self-hosted","linux"]'.
-      runs-on: ${{ vars.CI_RUNS_ON || '"ubuntu-latest"' }}
+      runs-on: '"windows-latest"'
       # working-directory: path/to/uv-project   # when pyproject.toml is not at the repository root
       tooling-ref: eab59dcfdb74e3424344b836bdaecdeb55b4e16a
       # Skip lint and test (shown as skipped) on pull requests that change only these paths:
